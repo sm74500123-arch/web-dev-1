@@ -1,73 +1,93 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOODSHOT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>My Portfolio</title>
 </head>
-<div align="center">
-<h1>COMPLEX TABLE</h1>
-<hr>
+
 <body>
-    <table border="2" cellpadding="10" cellspacing="5" width="50%" align="center">
-        <br>
-        <caption><b>MARKSHEET</b></caption>
-        <tr>
-            <th>NAME</th>
-            <th>SUBJECT</th>
-            <th>MARKS</th>
-            <th>GRADE</th>
-        </tr>
-        <tr>
-            <td rowspan="3">SAMEER</td>
-            <td>Maths</td>
-            <td>19</td>
-            <td>A+</td> 
-        </tr>
-        <tr>
-            <td>Science</td>
-            <td>20</td>
-            <td>A++</td>
-        </tr>
-        <tr>
-            <td>English</td>
-            <td>19</td>
-            <td>A+</td>
-        </tr>
-         <tr>
-            <td rowspan="3">YASH</td>
-            <td>Maths</td>
-            <td>16</td>
-            <td>A</td> 
-        </tr>
-        <tr>
-            <td>Science</td>
-            <td>19</td>
-            <td>A+</td>
-        </tr>
-        <tr>
-            <td>English</td>
-            <td>20</td>
-            <td>A++</td>
-        </tr>
-         <tr>
-            <td rowspan="3">PAWAN</td>
-            <td>Maths</td>
-            <td>16</td>
-            <td>B+</td> 
-        </tr>
-        <tr>
-            <td>Science</td>
-            <td>17</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <td>English</td>
-            <td>15</td>
-            <td>B</td>
-        </tr>
-    </table>
-    
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Sameer</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero & About Section -->
+        <section id="about">
+            <h1>Welcome to My Portfolio</h1>
+            <img style="border-radius: 50%;" src="IMG-20251004-WA0037[1].jpg" alt="My Profile Picture" width="150">
+            <p>Hello! I am a passionate learner. This is my portfolio website where I showcase my projects and skills.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Portfolio Website - A simple personal portfolio.</li>
+                <li>Calculator App - A basic web-based calculator.</li>
+                <li>To-Do List - A task management web app.</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <table border="1">
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Beginner</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>
